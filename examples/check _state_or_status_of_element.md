@@ -1,0 +1,8 @@
+In Selenium, the is_enabled, is_displayed, and is_selected methods are used to check the state or status of different elements on a web page. Here's a brief explanation of each method:
+
+* is_enabled(): This method is used to determine whether an element is enabled or disabled. An enabled element is interactive and can be clicked or interacted with by the user. On the other hand, a disabled element is non-interactive and typically appears grayed out or unclickable. The is_enabled() method returns a boolean value (True if the element is enabled, False if it is disabled).
+  > Refer [transfer_amount.py](transfer_amount.py) file
+* is_displayed(): This method is used to determine whether an element is visible or hidden on the web page. A visible element is displayed on the screen and can be seen by the user. In contrast, a hidden element is not visible and is typically concealed using CSS properties or other techniques. The is_displayed() method returns a boolean value (True if the element is visible, False if it is hidden).
+
+* is_selected(): This method is commonly used with checkbox or radio button elements to check whether they are selected or not. For checkboxes, it indicates whether the checkbox is checked or unchecked. For radio buttons, it determines whether the radio button is selected or not. The is_selected() method returns a boolean value (True if the element is selected, False if it is not selected).
+  > Refer [apply_personal_loan.py](apply_personal_loan.py) file

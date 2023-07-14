@@ -23,6 +23,10 @@ from_acc_dropdown = Select(from_acc_element)
 #from_acc_dropdown.select_by_index(3)
 #from_acc_dropdown.select_by_value("530")
 from_acc_dropdown.select_by_visible_text("9999000453354530")
+
+to_acc_ele = driver.find_element(By.XPATH, '//*[@id="toaccount"]')
+assert to_acc_ele.is_enabled() == False, "Element must be disabled"
+
 driver.find_element(By.ID,"sd").send_keys(6000)
 driver.find_element(By.ID,"message").send_keys("Loan Payment")
 driver.find_element(By.ID,"confirm_payment").click()
