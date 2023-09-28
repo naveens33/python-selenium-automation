@@ -19,4 +19,10 @@ driver.find_element(By.XPATH,"//div[@id='loan_sections_tab']/div[1]//span").clic
 
 iframe_ele = driver.find_element(By.TAG_NAME,"iframe")
 driver.switch_to.frame(iframe_ele)
-print(driver.find_element(By.XPATH,"//*[text()='ctreport-selenium']").text)
+# driver.switch_to.frame(0)
+# driver.switch_to.frame('frame_name')
+project_name = driver.find_element(By.CLASS_NAME, "project-name").text
+print(project_name)
+#driver.switch_to.parent_frame()
+driver.switch_to.default_content()
+driver.find_element(By.ID,"submit").click()

@@ -31,6 +31,7 @@ Note: Farz-So*y-Framework refer for lazy implementation -- similar to pagefactor
 ## Creational design patterns
 ### Factory method patterns
 * This pattern defines an interface for creating an object but allows subclasses to decide which class to instantiate. Factory methods let a class defer instantiation to subclasses.
+
 **Benefits**
 * Having all objects initialization in a single place makes support much easier later (Single Responsibility Principle).
 * The pattern is easily extendable without altering existing code (e.g., open/close principle).
@@ -127,7 +128,7 @@ The Fluent Page Object Model (POM) is an extension or variation of the tradition
 While the Fluent POM shares similarities with the Builder pattern in terms of method chaining, it does not involve the creation of complex objects step-by-step like the traditional Builder pattern. Instead, it focuses on providing a more fluent and concise way of interacting with web elements within the Page Object Model.
 
 **Sample Code**
-```python
+```
 class LoginPage:
     def __init__(self, driver):
         self.driver = driver
